@@ -1,6 +1,6 @@
 package StatusBoard::Graph::DataSeq;
 {
-  $StatusBoard::Graph::DataSeq::VERSION = '1.0.0';
+  $StatusBoard::Graph::DataSeq::VERSION = '1.0.1';
 }
 
 # ABSTRACT: datasequences representation for the StatusBoard::Graph
@@ -109,7 +109,7 @@ StatusBoard::Graph::DataSeq - datasequences representation for the StatusBoard::
 
 =head1 VERSION
 
-version 1.0.0
+version 1.0.1
 
 =head1 SYNOPSIS
 

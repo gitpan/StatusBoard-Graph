@@ -1,6 +1,6 @@
 package StatusBoard::Graph;
 {
-  $StatusBoard::Graph::VERSION = '1.0.0';
+  $StatusBoard::Graph::VERSION = '1.0.1';
 }
 
 # ABSTRACT: create JSON with graph data for Status Board iPad App
@@ -62,7 +62,7 @@ sub write_json {
     write_file(
         $file_name,
         {binmode => ':utf8'},
-        $self->get_pretty_json(),
+        $self->get_json(),
     );
 
     return $false;
@@ -240,7 +240,7 @@ StatusBoard::Graph - create JSON with graph data for Status Board iPad App
 
 =head1 VERSION
 
-version 1.0.0
+version 1.0.1
 
 =head1 SYNOPSIS
 
@@ -278,8 +278,8 @@ version 1.0.0
 
     $sg->write_json("cola.json");
 
-Here is the screenshot of how this JSON file looks in the Status Board App
-(the screenshot is clickable):
+Here is L<the screenshot|http://upload.bessarabov.ru/bessarabov/031VBX4pHw_ALPcxRTVjflnAWuc.png>
+of how this JSON file looks in the Status Board App.
 
 =head1 DESCRIPTION
 
@@ -404,12 +404,6 @@ Returns bool value if the maximum Y-axis value is set.
 =head2 get_max_y_value
 
 Returns the maximum Y-axis value or dies if it is not set.
-
-=for HTML <p>
-<a href="http://upload.bessarabov.ru/bessarabov/031VBX4pHw_ALPcxRTVjflnAWuc.png">
-<img src="http://upload.bessarabov.ru/bessarabov/VdagpUXEQdMslOqUyOAzwa-DOaU.png" width="500" height="125" alt="Status board graph sample" />
-</a>
-</p>
 
 =head1 TODO
 
